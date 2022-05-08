@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+:is(html, body #root .App) {
+  height: 100vh;
+  width: 100vw;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,5 +39,10 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.map-container {
+  :last-child {
+    // display: none;
   }
 }
